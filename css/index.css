@@ -1,0 +1,110 @@
+/* *************** reset***************** */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* **************************global************ */
+:root{
+--White: hsl(0, 0%, 100%);
+--Light-gray: hsl(212, 45%, 89%);
+--Grayish-blue: hsl(220, 15%, 55%);
+--Dark-blue: hsl(218, 44%, 22%);
+}
+
+@font-face{
+    font-family: outfit;
+    src: url(/fonts/Outfit-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: outfit;
+    src: url(/fonts/Outfit-Bold.ttf);
+    font-weight: 700;
+
+}
+
+h1{
+    color: var(--Dark-blue);
+    font-size: 1.5em;
+}
+
+
+body{
+    background-color: var(--Light-gray);
+    font-family: outfit;
+    text-align: center;
+    font-size: 15px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+
+
+/* ************mian********* */
+
+main{
+    background-color: var(--White);
+    
+    padding: 1em;
+    width: 85%;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+}
+
+img{
+    border-radius: 0.9em;
+    -webkit-border-radius: 0.9em;
+    -moz-border-radius: 0.9em;
+    -ms-border-radius: 0.9em;
+    -o-border-radius: 0.9em;
+}
+
+h1{
+    margin: 0.8em 0;
+}
+
+p{
+    color: var(--Grayish-blue);
+    font-size: 1.1em;
+    margin-bottom: 1.3em;
+}
+/* ***************footer************ */
+
+footer{
+    margin-top: 1em;
+}
+
+/* ************media query****** */
+
+@media screen and (min-width:600px) {
+    main{
+        width: 60%;
+    }
+    
+}
+
+@media screen and (min-width:992px) {
+    main{
+        width: 25%;
+    }
+    
+}
+
